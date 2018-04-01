@@ -5,7 +5,7 @@ import { Card, CardSection, Button } from './common';
 import EmployeeForm from './EmployeeForm';
 
 class EmployeeCreate extends Component {
-  
+
   onButtonPress() {
     const { name, phone, shift } = this.props;
 
@@ -14,13 +14,14 @@ class EmployeeCreate extends Component {
   render() {
     return (
       <Card>
-        <EmployeeForm {...this.props} /> //take all diff props and pass them to employee formww
+        //take all diff props and pass them to employee form
+        <EmployeeForm {...this.props} />
         <CardSection>
           <Button onPress={this.onButtonPress.bind(this)}>
             Create
           </Button>
         </CardSection>
-      </Card>
+      </Card> 
     );
   }
 }
