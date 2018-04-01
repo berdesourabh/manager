@@ -14,14 +14,13 @@ class EmployeeCreate extends Component {
   render() {
     return (
       <Card>
-        //take all diff props and pass them to employee form
         <EmployeeForm {...this.props} />
         <CardSection>
           <Button onPress={this.onButtonPress.bind(this)}>
             Create
           </Button>
         </CardSection>
-      </Card> 
+      </Card>
     );
   }
 }
